@@ -1,8 +1,12 @@
-from os import system, name
+from app.menu import menu
+from app.adicionar import adicionar
+from app.estatisticas import estatisticas
+from app.utils import cls, formatar_valor
 
+# Variáveis globais
+setores = []
+gastos = []
+ganhos = []
 
-def cls():
-    system('cls') if name == 'nt' else system('clear')
-cls()
-
-input("Aperte Enter para confirmar...")
+# Chama o menu, passando as funções e variáveis necessárias
+menu(setores, gastos, ganhos, adicionar, estatisticas, formatar_valor, cls)
