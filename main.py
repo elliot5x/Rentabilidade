@@ -8,5 +8,14 @@ setores = []
 gastos = []
 ganhos = []
 
+
+# Dados totais
+dados = {
+    "total_gastos": 0,
+    "total_lucros": 0,
+    "diferenca": 0
+}
+
 # Chama o menu, passando as funções e variáveis necessárias
-menu(setores, gastos, ganhos, adicionar, estatisticas, formatar_valor, cls)
+menu(setores, gastos, ganhos, adicionar, estatisticas, formatar_valor, cls, dados)
+

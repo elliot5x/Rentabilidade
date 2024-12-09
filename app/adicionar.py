@@ -1,7 +1,7 @@
 from time import sleep
 from app.utils import cls
 
-def adicionar(setores, gastos, ganhos, formatar_valor):
+def adicionar(setores, gastos, ganhos, formatar_valor, dados):
     while True:
         cls()
         setor = input("Setor: ").strip()
@@ -21,14 +21,14 @@ def adicionar(setores, gastos, ganhos, formatar_valor):
         ganhos.append(ganho)
 
         # Calcula os totais
-        total_gastos = sum(gastos)
-        total_lucros = sum(ganhos)
-        diferenca = total_lucros - total_gastos
+        dados["total_gastos"] += gasto
+        dados["total_lucros"] += ganho
+        dados["diferenca"] = dados["total_lucros"] - dados["total_gastos"]
 
         print("\nResumo:")
-        print(f"Gastos Totais: R$ {formatar_valor(total_gastos)}")
-        print(f"Ganhos Total: R$ {formatar_valor(total_lucros)}")
-        print(f"Diferença: R$ {formatar_valor(diferenca)}")
+        print(f"Gastos Totais: R$ {formatar_valor(dados["total_gastos"])}")
+        print(f"Ganhos Total: R$ {formatar_valor(dados["total_lucros"])}")
+        print(f"Diferença: R$ {formatar_valor(dados["diferenca"])}")
 
         while True:
             sair = input("\nDeseja adicionar outro setor? (y/n): ").strip().lower()
