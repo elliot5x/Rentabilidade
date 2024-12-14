@@ -16,10 +16,9 @@ def estatisticas(setores, gastos, ganhos, formatar_valor, dados):
             print(f"Lucrando: R$: {formatar_valor(lucrando)}")
 
     # TOTAL
-
     print("\n=== TOTAL ===")
     print(f"Gastos Totais: R$ {formatar_valor(dados["total_gastos"])}")
     print(f"Ganhos Total: R$ {formatar_valor(dados["total_lucros"])}")
     print(f"Lucrando: R$ {formatar_valor(dados["diferenca"])}")
 
-    input("Pressione Enter para voltar ao menu.")
+    input("\nPressione Enter para voltar ao menu.")

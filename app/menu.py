@@ -1,18 +1,19 @@
 # app/menu.py
 from time import sleep
 from testes.testes import analise
+from main import remover
 
 def menu(setores, gastos, ganhos, adicionar, estatisticas, formatar_valor, cls, dados):
     while True:
         try:
             cls()
             print("=== RENTABILIDADE EMPRESARIAL ===")
-            print("[1] Adicionar\n[2] Estatísticas\n[3] Analise os dados\n[4] Sair")
+            print("[1] Adicionar\n[2] Estatísticas\n[3] Analise os dados\n[4] Remover dados\n[5] Sair")
             digite = int(input("Digite: "))
 
             if digite == 1:
                 cls()
-                adicionar(setores, gastos, ganhos, formatar_valor, dados)
+                adicionar(setores, gastos, ganhos, formatar_valor, dados, menu)
             elif digite == 2:
                 cls()
                 estatisticas(setores, gastos, ganhos, formatar_valor, dados)
@@ -26,8 +27,9 @@ def menu(setores, gastos, ganhos, adicionar, estatisticas, formatar_valor, cls, 
                         input("\nAperte Enter para voltar ao menu.")
                 else:
                     input("\nSem análises no momento.\nAperte Enter para voltar ao menu.")
-
             elif digite == 4:
+                remover(setores, gastos, ganhos, cls, sleep)
+            elif digite == 5:
                 exit()
             else:
                 print("Escolha um número válido.")

@@ -4,20 +4,16 @@
 
 É um software de rentabilidade, que te ajuda a ver a diferença dos gastos e lucros.
 
-A ideia é ser uma ajuda para empresas a como gastar e render melhor os seu dinheiro com uma organização interna de gastos.
-
-_obs: Ele vai possuir uma função que ajuda a como organizar melhor os gastos_
+A ideia é ser uma ajuda para empresas a como gastar e render melhor o seu dinheiro com uma organização interna de gastos.
 
 ## Ideias novas:
 
-- Adicionar uma IA que ajude com a renda
+- Interface gráfica
 - Adicionar novas funções no menu
-
 
 ## Grande atualização:
 
-Tudo isso é apenas um começo, uma ideia do que estamos planejando.
-Queremos fazer uma interface gráfica para melhor usabilidade do usuário.
+Adicionei no menu a opção de *analise*, onde vc tem uma analise dos gastos e consegue redistribuir as perdas e realocar nos ganhos, gerando mais ganhos e menos perdas.
 
 ## Quem somos:
 
@@ -25,6 +21,28 @@ Queremos fazer uma interface gráfica para melhor usabilidade do usuário.
 
 Estamos nos formando na faculdade e tentando por em prática alguns projetos como esse, a fim de melhorar como programadores.
 
-** qualquer sugestão, mande pra gente ou fique a vontade para mudar o código e colaborar com o projeto.
+> Qualquer sugestão, mande pra gente ou fique a vontade para mudar o código e colaborar com o projeto.
+
+## Como instalar??
+
+> Levarei em consideração que você tem o python e sabe usar o terminal
+
+Primeiro você clona esse repositório:
+
+``` git clone https://github.com/elliot5x/Rentabilidade.git ```
+
+Entre na pasta e instale as bibliotecas necessárias:
+
+``` cd Rentabilidade ```
+
+``` pip install -r requirements.txt ```
+
+Logo após você pode finalmente rodar o código executando o _main.py_:
+
+```python main.py ```
+
+
+
+
 
 
