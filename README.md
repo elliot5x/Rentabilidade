@@ -11,9 +11,9 @@ A ideia é ser uma ajuda para empresas a como gastar e render melhor o seu dinhe
 - Interface gráfica
 - Adicionar novas funções no menu
 
-## Grande atualização:
+## Atualizações:
 
-Adicionei no menu a opção de *analise*, onde vc tem uma analise dos gastos e consegue redistribuir as perdas e realocar nos ganhos, gerando mais ganhos e menos perdas.
+Nova função de remover e lançamento da v0.1.0.
 
 ## Quem somos:
 
