@@ -17,8 +17,11 @@ def estatisticas(setores, gastos, ganhos, formatar_valor, dados):
 
     # TOTAL
     print("\n=== TOTAL ===")
-    print(f"Gastos Totais: R$ {formatar_valor(dados["total_gastos"])}")
-    print(f"Ganhos Total: R$ {formatar_valor(dados["total_lucros"])}")
-    print(f"Lucrando: R$ {formatar_valor(dados["diferenca"])}")
+    if all(key in dados for key in ["total_gastos", "total_lucros", "diferenca"]):
+        print(f"Gastos Totais: R$ {formatar_valor(dados['total_gastos'])}")
+        print(f"Ganhos Totais: R$ {formatar_valor(dados['total_lucros'])}")
+        print(f"Lucro Total: R$ {formatar_valor(dados['diferenca'])}")
+    else:
+        print("Os totais consolidados ainda não estão disponíveis.")
 
     input("\nPressione Enter para voltar ao menu.")

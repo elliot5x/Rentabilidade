@@ -1,7 +1,7 @@
 from time import sleep
 from app.utils import cls
 
-def adicionar(setores, gastos, ganhos, formatar_valor, dados):
+def adicionar(setores, gastos, ganhos, formatar_valor, dados, menu):
     while True:
         cls()
         setor = input("Setor: ").strip()
